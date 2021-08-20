@@ -1,0 +1,33 @@
+{
+  "name": "@kdeoliveira/ioc",
+  "version": "1.0.0",
+  "description": "IOC encapsulation for HttpApplication",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "start": "nodemon --config nodemon.config index.dev.ts",
+    "serve": "ts-node-dev --respawn ./index.dev.ts",
+    "build": "rm -rf ./dist && tsc",
+    "test": "jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@kdeoliveira/httpapp": "file:../kdeoliveira.httpapp",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.6.2",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
