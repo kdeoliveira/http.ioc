@@ -1,13 +1,14 @@
 import "reflect-metadata";
 
 import { BaseController } from "@kdeoliveira/httpapp";
-import Module from "../module";
-import Controller from "../controller";
-import Service from "../service";
-import Store from "../store";
+import Module from "../src/module";
+import Controller from "../src/controller";
+import Service from "../src/service";
+import Store from "../src/store";
 
 
 @Service()
+//@ts-ignore
 class TestService{
     constructor(){}
 
@@ -19,6 +20,7 @@ class TestService{
 @Controller({
     path: "/posts"
 })
+//@ts-ignore
 class TestController extends BaseController {
     constructor(public service: TestService, uri : string){
         super({uri});
