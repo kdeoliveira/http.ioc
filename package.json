@@ -18,7 +18,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@kdeoliveira/httpapp": "git+https://kdeoliveira@github.com/kdeoliveira/kdeoliveira.httpapp",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.6.2",
     "jest": "^27.0.6",
@@ -29,6 +28,7 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "@kdeoliveira/httpapp": "git+https://kdeoliveira@github.com/kdeoliveira/kdeoliveira.httpapp",
     "reflect-metadata": "^0.1.13"
   }
 }
