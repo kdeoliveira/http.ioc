@@ -11,7 +11,7 @@ script:
   - npm test
 
 after_success:
-  - echo $GH_TOKEN
+  - echo $GIT
 
 branches:
   only:
