@@ -1,5 +1,4 @@
 # https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
-ls
 npm run build
 git remote add url https://${GIT}@github.com/kdeoliveira/kdeoliveira.ioc
 git checkout $TRAVIS_BRANCH
