@@ -13,6 +13,7 @@ script:
 after_success:
   - npm pack
 
+skip_cleanup: true
 
 branches:
   only:
