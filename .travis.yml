@@ -9,15 +9,11 @@ before_script:
 
 script:
   - npm test
-
-after_success:
-  - git add .
-  - git commit commit_message
-
-  branches:
-    only:
-      - master
-      - dev
+  
+branches:
+  only:
+    - master
+    - dev
 
 deploy:
   provider: script
