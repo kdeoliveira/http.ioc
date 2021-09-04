@@ -14,9 +14,14 @@ after_success:
   - git add .
   - git commit commit_message
 
-skip_cleanup: true
+  branches:
+    only:
+      - master
+      - dev
 
-branches:
-  only:
-    - master
-    - dev
+deploy:
+  provider: script
+  script: bash deploy.sh
+  skip_cleanup: true
+  on:
+    all_branches: true
