@@ -11,7 +11,8 @@ script:
   - npm test
 
 after_success:
-  - npm pack
+  - git add .
+  - git commit commit_message
 
 skip_cleanup: true
 
