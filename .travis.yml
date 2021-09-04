@@ -10,9 +10,6 @@ before_script:
 script:
   - npm test
 
-after_success:
-  - echo $GIT
-
 branches:
   only:
     - master

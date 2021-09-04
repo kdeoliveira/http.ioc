@@ -1,22 +1,14 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __exportStar = (this && this.__exportStar) || function(m, exports) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = void 0;
+exports.Service = exports.Controller = exports.default = void 0;
 require("reflect-metadata");
 var module_1 = require("./module");
 Object.defineProperty(exports, "default", { enumerable: true, get: function () { return __importDefault(module_1).default; } });
-__exportStar(require("./controller"), exports);
-__exportStar(require("./service"), exports);
+var controller_1 = require("./controller");
+Object.defineProperty(exports, "Controller", { enumerable: true, get: function () { return __importDefault(controller_1).default; } });
+var service_1 = require("./service");
+Object.defineProperty(exports, "Service", { enumerable: true, get: function () { return __importDefault(service_1).default; } });
 //# sourceMappingURL=index.js.map

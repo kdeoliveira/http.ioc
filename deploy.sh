@@ -1,5 +1,6 @@
 # https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
 npm run build
+# $GIT set environment virable on REPO settings
 git remote add url https://${GIT}@github.com/kdeoliveira/kdeoliveira.ioc
 git checkout $TRAVIS_BRANCH
 git add .
