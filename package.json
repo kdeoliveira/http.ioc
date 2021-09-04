@@ -10,6 +10,7 @@
   "scripts": {
     "start": "nodemon --config nodemon.config index.dev.ts",
     "serve": "ts-node-dev --respawn ./index.dev.ts",
+    "setup": "npm install",
     "build": "rm -rf ./dist && tsc",
     "test": "jest --detectOpenHandles"
   },
