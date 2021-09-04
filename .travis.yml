@@ -9,7 +9,10 @@ before_script:
 
 script:
   - npm test
-  
+
+after_success:
+  - bash echo $GH_TOKEN
+
 branches:
   only:
     - master
