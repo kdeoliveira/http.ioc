@@ -14,20 +14,26 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
 const httpapp_1 = require("@kdeoliveira/httpapp");
-const module_1 = __importDefault(require("../module"));
-const controller_1 = __importDefault(require("../controller"));
-const service_1 = __importDefault(require("../service"));
-let TestService = class TestService {
+const module_1 = __importDefault(require("../src/module"));
+const controller_1 = __importDefault(require("../src/controller"));
+const service_1 = __importDefault(require("../src/service"));
+let TestService = 
+//@ts-ignore
+class TestService {
     constructor() { }
     thisClass() {
         return "TestService";
     }
 };
 TestService = __decorate([
-    service_1.default(),
+    (0, service_1.default)()
+    //@ts-ignore
+    ,
     __metadata("design:paramtypes", [])
 ], TestService);
-let TestController = class TestController extends httpapp_1.BaseController {
+let TestController = 
+//@ts-ignore
+class TestController extends httpapp_1.BaseController {
     constructor(service, uri) {
         super({ uri });
         this.service = service;
@@ -36,9 +42,11 @@ let TestController = class TestController extends httpapp_1.BaseController {
     }
 };
 TestController = __decorate([
-    controller_1.default({
+    (0, controller_1.default)({
         path: "/posts"
-    }),
+    })
+    //@ts-ignore
+    ,
     __metadata("design:paramtypes", [TestService, String])
 ], TestController);
 describe("The Module Decorator on HttpApp", () => {

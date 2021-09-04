@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class Store extends Map {
     fetch(target) {
         var tokens = Reflect.getMetadata("design:paramtypes", target) || [];
-        tokens.map((x) => console.log(x));
         //A new instance will be generated for each arguments extracted from design:paramtypes
         var instances = tokens.map(x => this.fetch(x));
         const classInstance = this.get(target);
