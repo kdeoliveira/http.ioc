@@ -1,6 +1,6 @@
 import "reflect-metadata";
 
 export {default} from "./module";
-export * from "./controller";
-export * from "./service";
+export {default as Controller} from "./controller";
+export {default as Service} from "./service";
 

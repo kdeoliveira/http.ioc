@@ -2,7 +2,7 @@ import "reflect-metadata";
 
 import Module from "./src/module";
 import { Base } from "./src/types";
-import Controller from "./src/controller"
+import {Controller} from "./src"
 
 // @Controller({
 //     uri: "localhsot"
@@ -35,6 +35,7 @@ class B {
 @Controller({
     path: "localhsot/categories"
 })
+//@ts-ignore
 class C extends Base{
     constructor(public a : A, public b : B, public uri : string){
             super(uri);
